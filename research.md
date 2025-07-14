@@ -27,11 +27,11 @@ pubs:
 ---
 
 <h2>Working Papers</h2>
-<div style="text-align: left;">
+<div style="margin-left: 0; padding-left: 0;">
   {% include cites.html articles=page.working_papers %}
 </div>
 
 <h2>Publications</h2>
-<div style="text-align: left;">
+<div style="margin-left: 0; padding-left: 0;">
   {% include cites.html articles=page.pubs %}
 </div>
