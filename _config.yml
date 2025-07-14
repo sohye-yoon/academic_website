@@ -30,27 +30,27 @@ plugins:
 # CUSTOMIZATION
 #################################################
 
-title: John A. Smith
-description: John A. Smith | Professor of Statistics | University of Doubt
+title: So Hye Yoon
+description: So Hye Yoon | Ph.D. Candidate in Economics | Princeton University
 
-url: "https://sylvaingchassang.github.io/academic_website"
-baseurl: "https://sylvaingchassang.github.io/academic_website"
+url: "https://sohye-yoon.github.io/academic_website"
+baseurl: ""
 
 # start year for copyright
-start_year: "2000"
+start_year: "2025"
 
 colors:
   background: "#FFFFFF;"
   separator: "#042352;"
 
 author:
-    name: "John A. Smith"
+    name: "So Hye Yoon"
 
 # manage your co-authors from here
-coauthors:
-  a_adam:
-      name: Alice Adam
-      web: https://www.aliceadamurl.org
-  b_brian:
-      name: Bob Brian
-      web: https://www.robertbrianurl.org
+#coauthors:
+#  a_adam:
+#      name: Alice Adam
+#      web: https://www.aliceadamurl.org
+#  b_brian:
+#      name: Bob Brian
+#      web: https://www.robertbrianurl.org
