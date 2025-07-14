@@ -19,7 +19,8 @@ pubs:
   - url: "https://onlinelibrary.wiley.com/doi/10.1111/jems.12547"
     title: "Tying in two-sided markets with heterogeneous advertising revenues and negative pricing"
     coauthors: 
-      - Jong-Hee Hahn, Sang-Hyun Kim
+      - Jong-Hee Hahn
+      - Sang-Hyun Kim
     journal: Journal of Economics & Management Strategy
     year: 2023
     abstract: "We offer a theory of anticompetitive tying in two-sided markets when below-cost or negative pricing is possible..."
