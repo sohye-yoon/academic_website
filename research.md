@@ -26,10 +26,12 @@ pubs:
     abstract: "We offer a theory of anticompetitive tying in two-sided markets when below-cost or negative pricing is possible. With the coexistence of two consumer groups (one regarding tying and tied goods as complementary and the other as independent), a tying-good monopolist may face difficulties in extracting rent under separate sales and wish to use tying to directly capture the large advertising revenue created in the complementary segment. We uncover two distinct mechanisms by which tying raises monopoly profits but reduces social welfare. Our theory of tying can be applied to real-world antitrust law enforcement, such as the Google Android case."
 ---
 
-## Working Papers
+<h2>Working Papers</h2>
+<div style="text-align: left;">
+  {% include cites.html articles=page.working_papers %}
+</div>
 
-{% include cites.html articles=page.working_papers %}
-
-## Publications
-
-{% include cites.html articles=page.pubs %}
+<h2>Publications</h2>
+<div style="text-align: left;">
+  {% include cites.html articles=page.pubs %}
+</div>
