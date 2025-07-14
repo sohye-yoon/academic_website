@@ -14,7 +14,7 @@ Ph.D. Candidate in Economics <br />
 [[email]][[linkedin]][[github]] <br />
 
 [CV]: {{ site.baseurl }}/assets/resume.pdf
-[University of Doubt]: https://www.princeton.edu/
+[Princeton University]: https://www.princeton.edu/
 [email]: mailto:sohye.yoon@princeton.edu
 [linkedin]: https://www.linkedin.com/in/sohyeyoon/
 [github]: https://github.com/sohye-yoon
