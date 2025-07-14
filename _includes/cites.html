@@ -1,4 +1,4 @@
-<ol>
+<ol style="padding-left: 1.2em; margin-left: 0; list-style-position: outside;">
 {% for pub in include.articles %}
   <li style="margin-bottom: 2em; line-height: 1.6; text-align: left;">
     <!-- Title and year -->
@@ -35,7 +35,7 @@
       <div><em>Presented at:</em> {{ pub.invited_conferences }}</div>
     {% endif %}
 
-    <!-- Optional: Abstract (smaller font and gray) -->
+    <!-- Optional: Abstract (smaller and gray) -->
     {% if pub.abstract %}
       <div style="margin-top: 1em;">
         <strong>Abstract:</strong><br>
