@@ -1,13 +1,44 @@
 {% for pub in include.articles %}
-   1. [**{{pub.title}}**]({% if pub.internal %}{{pub.url | prepend:
-      site.baseurl}}{% else %}{{pub.url}}{% endif %})
-      <br>
-      {% if pub.coauthors %}with
-         {% for author in pub.coauthors %} {%
-         assign author_data = site.coauthors[author] %}[{{
-         author_data.name}}]({{
-         author_data.web}}),{% endfor %}
-      {% endif %}{% if pub.journal %}*{{pub.journal}},* {% endif
-%}{{pub.year}} {% if pub.repo %} [[repo]({{pub.repo}})]{% endif %}
-      {: style="margin-top:0px"}
+1. <strong>{{ pub.title }}</strong><br>
+
+{% if pub.previous_title %}
+   <em>Previously titled:</em> {{ pub.previous_title }}<br>
+{% endif %}
+
+{% if pub.coauthors %}
+   with
+   {% for author in pub.coauthors %}
+      {% assign author_data = site.coauthors[author] %}
+      [{{ author_data.name }}]({{ author_data.web }}){% unless forloop.last %}, {% endunless %}
+   {% endfor %}
+   <br>
+{% endif %}
+
+{% if pub.journal %}
+   *{{ pub.journal }}*, 
+{% endif %}
+{{ pub.year }}
+
+{% if pub.repo %}
+   [[repo]({{ pub.repo }})]
+{% endif %}
+
+{% if pub.invited_conferences %}
+   <br><em>Presented at:</em> {{ pub.invited_conferences }}
+{% endif %}
+
+{% if pub.url %}
+   {% if pub.internal %}
+      [[PDF]({{ pub.url | prepend: site.baseurl }})]
+   {% else %}
+      [[Journal]({{ pub.url }})]
+   {% endif %}
+{% endif %}
+
+{% if pub.abstract %}
+   <div style="margin-top: 5px; margin-bottom: 15px;"><strong>Abstract:</strong> {{ pub.abstract }}</div>
+{% else %}
+   <br><br>
+{% endif %}
+
 {% endfor %}
