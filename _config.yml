@@ -33,8 +33,8 @@ plugins:
 title: So Hye Yoon
 description: So Hye Yoon | Ph.D. Candidate in Economics | Princeton University
 
-url: "https://sohye-yoon.github.io/academic_website"
-baseurl: ""
+url: "https://sohye-yoon.github.io"
+baseurl: "/academic_website"
 
 # start year for copyright
 start_year: "2025"
