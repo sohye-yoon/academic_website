@@ -5,7 +5,7 @@ permalink: /
 ---
 <br> 
 
-{% include image.html url="images/photo.jpg" caption="" width="500px" align="left" %}
+{% include image.html url="images/sh0077-1.jpg" caption="" width="500px" align="left" %}
 
 
 So Hye Yoon [[CV]]<br />
