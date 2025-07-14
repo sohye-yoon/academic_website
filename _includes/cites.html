@@ -1,6 +1,6 @@
 <ol>
 {% for pub in include.articles %}
-  <li style="margin-bottom: 2em; line-height: 1.6;">
+  <li style="margin-bottom: 2em; line-height: 1.6; text-align: left;">
     <!-- Title and year -->
     <strong>{{ pub.title }}{% if pub.year %} ({{ pub.year }}){% endif %}</strong><br>
 
@@ -9,37 +9,39 @@
       <div><em>Previously titled:</em> {{ pub.previous_title }}</div>
     {% endif %}
 
-    <!-- Optional: Coauthors as plain text -->
+    <!-- Optional: Authors -->
     {% if pub.authors %}
       <div>{{ pub.authors }}</div>
     {% endif %}
 
-    <!-- Optional: Journal -->
-    {% if pub.journal %}
-      <div><em>{{ pub.journal }}</em></div>
-    {% endif %}
-
-    <!-- Optional: Conference presentations -->
-    {% if pub.invited_conferences %}
-      <div><em>Presented at:</em> {{ pub.invited_conferences }}</div>
-    {% endif %}
-
-    <!-- Optional: PDF or Journal link -->
-    {% if pub.url %}
+    <!-- Optional: Journal + Link (same line) -->
+    {% if pub.journal or pub.url %}
       <div>
-        {% if pub.internal %}
-          <a href="{{ pub.url | prepend: site.baseurl }}">[PDF]</a>
-        {% else %}
-          <a href="{{ pub.url }}">[Link]</a>
+        {% if pub.journal %}
+          <em>{{ pub.journal }}</em>
+        {% endif %}
+        {% if pub.url %}
+          {% if pub.internal %}
+            <a href="{{ pub.url | prepend: site.baseurl }}">[PDF]</a>
+          {% else %}
+            <a href="{{ pub.url }}">[Link]</a>
+          {% endif %}
         {% endif %}
       </div>
     {% endif %}
 
-    <!-- Optional: Abstract -->
+    <!-- Optional: Invited Conferences -->
+    {% if pub.invited_conferences %}
+      <div><em>Presented at:</em> {{ pub.invited_conferences }}</div>
+    {% endif %}
+
+    <!-- Optional: Abstract (smaller font and gray) -->
     {% if pub.abstract %}
       <div style="margin-top: 1em;">
         <strong>Abstract:</strong><br>
-        <div style="margin-left: 1em;">{{ pub.abstract }}</div>
+        <div style="margin-left: 1em; font-size: 0.9em; color: #444;">
+          {{ pub.abstract }}
+        </div>
       </div>
     {% endif %}
   </li>
