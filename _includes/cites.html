@@ -1,46 +1,46 @@
 <ol>
 {% for pub in include.articles %}
   <li style="margin-bottom: 2em; line-height: 1.6;">
-    <strong>{{ pub.title }}</strong><br>
+    <!-- Title and year -->
+    <strong>{{ pub.title }}{% if pub.year %} ({{ pub.year }}){% endif %}</strong><br>
 
+    <!-- Optional: Previously titled -->
     {% if pub.previous_title %}
       <div><em>Previously titled:</em> {{ pub.previous_title }}</div>
     {% endif %}
 
-    {% if pub.coauthors %}
-      <div>
-        with
-        {% for author in pub.coauthors %}
-          {% assign author_data = site.coauthors[author] %}
-          [{{ author_data.name }}]({{ author_data.web }}){% unless forloop.last %}, {% endunless %}
-        {% endfor %}
-      </div>
+    <!-- Optional: Coauthors as plain text -->
+    {% if pub.authors %}
+      <div>{{ pub.authors }}</div>
     {% endif %}
 
+    <!-- Optional: Journal -->
     {% if pub.journal %}
-      <em>{{ pub.journal }}</em>,
-    {% endif %}
-    {{ pub.year }}
-
-    {% if pub.repo %}
-      <span>[[repo]({{ pub.repo }})]</span>
+      <div><em>{{ pub.journal }}</em></div>
     {% endif %}
 
+    <!-- Optional: Conference presentations -->
     {% if pub.invited_conferences %}
       <div><em>Presented at:</em> {{ pub.invited_conferences }}</div>
     {% endif %}
 
+    <!-- Optional: PDF or Journal link -->
     {% if pub.url %}
-      {% if pub.internal %}
-        <div><a href="{{ pub.url | prepend: site.baseurl }}">[PDF]</a></div>
-      {% else %}
-        <div><a href="{{ pub.url }}">[Journal]</a></div>
-      {% endif %}
+      <div>
+        {% if pub.internal %}
+          <a href="{{ pub.url | prepend: site.baseurl }}">[PDF]</a>
+        {% else %}
+          <a href="{{ pub.url }}">[Journal]</a>
+        {% endif %}
+      </div>
     {% endif %}
 
+    <!-- Optional: Abstract -->
     {% if pub.abstract %}
-      <div style="margin-top: 1em;"><strong>Abstract:</strong><br>
-      <div style="margin-left: 1em;">{{ pub.abstract }}</div></div>
+      <div style="margin-top: 1em;">
+        <strong>Abstract:</strong><br>
+        <div style="margin-left: 1em;">{{ pub.abstract }}</div>
+      </div>
     {% endif %}
   </li>
 {% endfor %}
