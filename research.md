@@ -19,7 +19,6 @@ working_papers:
 
 pubs:
   - url: "https://onlinelibrary.wiley.com/doi/10.1111/jems.12547"
-    internal: true
     title: "Tying in two-sided markets with heterogeneous advertising revenues and negative pricing"
     coauthors: 
       - Jong-Hee Hahn, Sang-Hyun Kim
@@ -27,3 +26,11 @@ pubs:
     year: 2023
     abstract: "We offer a theory of anticompetitive tying in two-sided markets when below-cost or negative pricing is possible. With the coexistence of two consumer groups (one regarding tying and tied goods as complementary and the other as independent), a tying-good monopolist may face difficulties in extracting rent under separate sales and wish to use tying to directly capture the large advertising revenue created in the complementary segment. We uncover two distinct mechanisms by which tying raises monopoly profits but reduces social welfare. Our theory of tying can be applied to real-world antitrust law enforcement, such as the Google Android case."
 ---
+
+## Working Papers
+
+{% include cites.html articles=page.working_papers %}
+
+## Publications
+
+{% include cites.html articles=page.pubs %}
