@@ -61,3 +61,30 @@ $desktop:          50em;
     "syntax-highlighting",
     "fancy-image"
 ;
+
+/* --- Safari-safe headshot rules --- */
+img.headshot {
+  display: block;
+  float: left;
+  clear: both;            /* key: start below any floated/inline elements above (e.g., the logo) */
+  margin: 0 1.25rem 1rem 0;
+  max-width: 320px;       /* cap size on large screens */
+  width: 100%;            /* responsive shrink */
+  height: auto;
+}
+
+/* Global safety net for images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Stack nicely on phones */
+@include media-query($mobile) {
+  img.headshot {
+    float: none;
+    clear: both;
+    margin: 1rem auto;
+    max-width: 60vw;
+  }
+}
