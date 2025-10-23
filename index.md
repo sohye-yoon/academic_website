@@ -5,7 +5,7 @@ permalink: /
 ---
 <br> 
 
-{% include image.html url="images/sh0077-1.jpg" caption="" width="400" align="left" %}
+{% include image.html url="images/photo_shorter.jpg" caption="" width="400" align="left" %}
 
 
 
