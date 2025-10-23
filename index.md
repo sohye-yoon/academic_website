@@ -6,8 +6,6 @@ permalink: /
 <br> 
 
 <img src="images/photo_shorter.jpg" width="400" style="float:left; margin:0 1em 1em 0;" alt="">
-<!-- {% include image.html url="images/photo_shorter.jpg" caption="" width="500" align="left" %} -->
-
 
 
 **So Hye Yoon** [[CV]]<br />
