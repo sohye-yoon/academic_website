@@ -1,8 +1,8 @@
 ---
 layout: page
-permalink: /digital_art/
+permalink: /personal/
 title: Personal
-digital_art: 
+personal: 
 
 I enjoy creating digital art in my spare time.  
 Below are a few selected pieces.
