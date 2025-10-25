@@ -3,7 +3,7 @@ layout: page
 permalink: /personal/
 title: Personal
 personal: 
-
+---
 I enjoy creating digital art in my spare time.  
 Below are a few selected pieces.
 
@@ -34,4 +34,3 @@ Below are a few selected pieces.
 </figure>
 
 <br>
----
