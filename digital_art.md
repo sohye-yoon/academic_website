@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /digital_art/
-
+title: Personal
 
 I enjoy creating digital art in my spare time.  
 Below are a few selected pieces.
