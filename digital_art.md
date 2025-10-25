@@ -2,7 +2,7 @@
 layout: page
 permalink: /digital_art/
 title: Personal
-ditial_art: I enjoy creating digital art in my spare time.  
+digital_art: I enjoy creating digital art in my spare time.  
 Below are a few selected pieces.
 
 <br>
