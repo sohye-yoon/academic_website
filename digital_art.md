@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /digial_art/
+permalink: /digital_art/
 I enjoy creating digital art in my spare time, focusing on minimalist compositions and portrait work.  
 Below are a few selected pieces.
 
