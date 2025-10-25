@@ -6,14 +6,28 @@ Below are a few selected pieces.
 
 <br>
 
-{% assign art = site.static_files | where_exp: "f", "f.path contains 'assets/artwork/'" %}
-{% for image in art %}
-  {% assign ext = image.extname | downcase %}
-  {% if ext == ".jpg" or ext == ".jpeg" or ext == ".png" or ext == ".gif" or ext == ".webp" %}
-    <figure style="display:inline-block; margin:0.5em;">
-      <img src="{{ image.path | relative_url }}" alt="Digital artwork by So Hye Yoon" width="300" style="border-radius:8px;">
-    </figure>
-  {% endif %}
-{% endfor %}
+<figure style="display:inline-block; margin:0.5em;">
+  <img src="{{ '/assets/artwork/LaVita.png' | relative_url }}" alt="La Vita" width="300" style="border-radius:8px;">
+</figure>
+
+<figure style="display:inline-block; margin:0.5em;">
+  <img src="{{ '/assets/artwork/life.png' | relative_url }}" alt="Life" width="300" style="border-radius:8px;">
+</figure>
+
+<figure style="display:inline-block; margin:0.5em;">
+  <img src="{{ '/assets/artwork/mantaray.png' | relative_url }}" alt="Manta Ray" width="300" style="border-radius:8px;">
+</figure>
+
+<figure style="display:inline-block; margin:0.5em;">
+  <img src="{{ '/assets/artwork/whale_part1.png' | relative_url }}" alt="Whale" width="300" style="border-radius:8px;">
+</figure>
+
+<figure style="display:inline-block; margin:0.5em;">
+  <img src="{{ '/assets/artwork/leaves.png' | relative_url }}" alt="Leaves" width="300" style="border-radius:8px;">
+</figure>
+
+<figure style="display:inline-block; margin:0.5em;">
+  <img src="{{ '/assets/artwork/wine.png' | relative_url }}" alt="Wine" width="300" style="border-radius:8px;">
+</figure>
 
 <br>
