@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /digital_art/
-I enjoy creating digital art in my spare time, focusing on minimalist compositions and portrait work.  
+I enjoy creating digital art in my spare time.  
 Below are a few selected pieces.
 
 <br>
