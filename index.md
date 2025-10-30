@@ -13,7 +13,7 @@ Ph.D. Candidate in Economics <br />
 [Princeton University], NJ <br />
 [[email]][[linkedin]][[github]] <br />
 
-[CV]: {{ site.baseurl }}/assets/CV_SohyeYoon_1022.pdf
+[CV]: {{ site.baseurl }}/assets/resume.pdf
 [Princeton University]: https://www.princeton.edu/
 [email]: mailto:sohye.yoon@princeton.edu
 [linkedin]: https://www.linkedin.com/in/sohyeyoon/
