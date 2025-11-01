@@ -17,7 +17,7 @@ working_papers:
     year: 2025
     internal: True
     url:   "/assets/papers/Coffeeshop_2025submission_SohyeYoon.pdf"
-    invited_conferences: "13th European Meeting of the Urban Economics Association"
+    invited_conferences: "the 13th European Meeting of the Urban Economics Association"
     #authors: "with no coauthor"
     abstract: "This paper examines the timing of product offerings as an additional dimension of competition, expanding the understanding of firms’ positioning decisions. The analysis exploits a novel setting in the U.S. coffee shop industry during the COVID-19 pandemic, when labor shortages sharply increased operating costs and induced firms to compete on which days to open. Using mobile tracking and sales data, I estimate a structural model of demand, pricing, and operating-day choices under sticky (uniform) pricing. The results show that higher labor frictions reduce the number of operating days, and that price stickiness amplifies this effect by linking daily operations to weekly pricing incentives. Counterfactual simulations reveal that ignoring this interaction understates the welfare losses from higher operating costs, underscoring the importance of accounting for interdependent competitive dimensions—time and price—in assessing market outcomes."
 
