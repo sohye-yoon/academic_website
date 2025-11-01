@@ -28,6 +28,14 @@ pubs:
     year: 2023
     url: "https://onlinelibrary.wiley.com/doi/10.1111/jems.12547"
     abstract: "We offer a theory of anticompetitive tying in two-sided markets when below-cost or negative pricing is possible. With the coexistence of two consumer groups (one regarding tying and tied goods as complementary and the other as independent), a tying-good monopolist may face difficulties in extracting rent under separate sales and wish to use tying to directly capture the large advertising revenue created in the complementary segment. We uncover two distinct mechanisms by which tying raises monopoly profits but reduces social welfare. Our theory of tying can be applied to real-world antitrust law enforcement, such as the Google Android case."
+
+wip:
+  - title: "Two-Sided Bargaining in Regulation: Private Equity and Local Government in Permits and Rezoning"
+    authors: "So Hye Yoon"
+    year: 2025
+    # url: "/assets/papers/PE_LocalGov_WIP.pdf"  
+    abstract: This project examines how private equity (PE) firms engage in two-sided bargaining with local governments to navigate regulatory processes and shape housing supply. Using permit, lobbying, and legislative data from the United States, I study whether PE ownership facilitates faster permitting, more successful rezoning applications, and ultimately more efficient development outcomes. Preliminary evidence from Chicago shows that permits for PE-owned properties are processed more quickly, underscoring how scale, financing capacity, and lobbying strength influence bargaining dynamics in urban development.
+
 ---
 
 <div style="clear: both;"></div>
@@ -41,3 +49,9 @@ pubs:
 <div style="margin-left: 0; padding-left: 0;">
   {% include cites.html articles=page.pubs %}
 </div>
+
+<h2>Work in Progress</h2>
+<div style="margin-left: 0; padding-left: 0;">
+  {% include cites.html articles=page.wip %}
+</div>
+
