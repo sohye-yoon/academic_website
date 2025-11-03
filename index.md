@@ -20,4 +20,4 @@ Ph.D. Candidate in Economics <br />
 [github]: https://github.com/sohye-yoon
 
 **Job Market Candidate, 2025–2026**  
-**Research Areas**: Industrial Organization, Urban and Real Estate Economics, Digital Economics, AI, Finance
+**Research Areas**: Industrial Organization, Real Estate and Urban Economics, Digital Economics, AI, Finance
