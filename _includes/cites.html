@@ -35,6 +35,11 @@
       <div><em>Presented at:</em> {{ pub.invited_conferences }}</div>
     {% endif %}
 
+    <!-- Optional: Award -->
+    {% if pub.award %}
+      <div><em>Award:</em> {{ pub.award }}</div>
+    {% endif %}
+
     <!-- Optional: Abstract (smaller and gray) -->
     {% if pub.abstract %}
       <div style="margin-top: 1em;">
